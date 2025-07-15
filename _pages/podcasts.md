@@ -170,6 +170,7 @@ permalink: /podcasts/
                 <article class="content-card">
                     <div class="card-content">
                         <ul class="content-list">
+                            <li><a href="https://konveyor.io/blog/2025/hints_generation/" target="_blank">From "Good Examples" to a Reusable Hint for App Modernization</a> - Konveyor Blog</li>
                             <li><a href="https://www.cncf.io/blog/2023/05/23/modernize-legacy-applications-to-kubernetes-at-scale/" target="_blank">Modernize Legacy Applications to Kubernetes at Scale</a> - CNCF Blog</li>
                             <li><a href="https://kubernetes.io/blog/2021/10/05/nsa-cisa-kubernetes-hardening-guidance/" target="_blank">NSA-CISA Kubernetes Hardening Guidance</a> - Kubernetes Blog</li>
                             <li><a href="https://www.konveyor.io/blog/modernize-petclinic-to-k8s-using-konveyor/" target="_blank">Modernize PetClinic to K8s Using Konveyor</a> - Konveyor Blog</li>
