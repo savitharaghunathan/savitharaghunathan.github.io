@@ -1,0 +1,53 @@
+<!-- 
+  Section Template - Copy this structure for new sections
+  
+  Usage:
+  {% include section-template.html 
+    title="Section Title"
+    intro="Section description text"
+    category="Optional category name"
+    grid_size="small|medium|large" %}
+  
+  Content goes here...
+-->
+
+<section class="content-section">
+  <h2 class="section-title">{{ include.title }}</h2>
+  
+  {% if include.intro %}
+  <div class="section-intro">
+    <p>{{ include.intro }}</p>
+  </div>
+  {% endif %}
+  
+  {% if include.category %}
+  <div class="section-category">
+    <h3 class="category-title">{{ include.category }}</h3>
+  {% endif %}
+  
+  <div class="content-grid{% if include.grid_size %} {{ include.grid_size }}{% endif %}">
+    <!-- Add your content cards here -->
+    <article class="content-card">
+      <div class="card-content">
+        <h3 class="card-title">
+          <a href="#" target="_blank">Example Item Title</a>
+        </h3>
+        <div class="card-meta">
+          <span class="tag">Category</span>
+          <span class="tag">Date</span>
+        </div>
+        <div class="card-description">
+          <p>Brief description of the item...</p>
+        </div>
+        <a href="#" class="action-button" target="_blank">
+          <span>🔗</span>
+          View Item
+        </a>
+      </div>
+    </article>
+  </div>
+  
+  {% if include.category %}
+  </div>
+  {% endif %}
+</section> 

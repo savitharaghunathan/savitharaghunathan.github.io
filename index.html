@@ -1,0 +1,66 @@
+---
+layout: default
+title: Home
+---
+
+<section class="hero">
+    <div class="container">
+        <h1>Welcome to My Personal Website</h1>
+        <p>I'm a passionate individual sharing thoughts, experiences, and insights through writing and podcasting.</p>
+        <div class="hero-buttons">
+            <a href="/about/" class="btn">Learn More About Me</a>
+            <a href="/blog/" class="btn btn-secondary">Read My Blog</a>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="featured-content">
+        <div class="card">
+            <h2>Latest Blog Posts</h2>
+            <p>Explore my thoughts on technology, life, and everything in between.</p>
+            <a href="/blog/" class="btn">View All Posts</a>
+        </div>
+        
+        <div class="card">
+            <h2>Podcast Episodes</h2>
+            <p>Listen to my latest podcast episodes and discussions.</p>
+            <a href="/podcasts/" class="btn">Listen Now</a>
+        </div>
+        
+        <div class="card">
+            <h2>About Me</h2>
+            <p>Learn more about my background, interests, and what drives me.</p>
+            <a href="/about/" class="btn">Get to Know Me</a>
+        </div>
+    </div>
+</section>
+
+<style>
+.hero-buttons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.featured-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+@media (max-width: 768px) {
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-buttons .btn {
+        width: 200px;
+        text-align: center;
+    }
+}
+</style> 

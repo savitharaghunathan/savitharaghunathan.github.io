@@ -1,0 +1,66 @@
+# Site settings
+title: "Savitha Raghunathan"
+email: "your-email@example.com"
+description: "Personal website, blog, and podcast collection"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://savitharaghunathan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+github_username: "savitharaghunathan"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:year/:month/:day/:title/
+  podcasts:
+    output: true
+    permalink: /podcasts/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Savitha Raghunathan"
+  - scope:
+      path: ""
+      type: "podcasts"
+    values:
+      layout: "podcast"
+      author: "Savitha Raghunathan"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+# Pagination
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Include files
+include:
+  - _pages
+  - _posts
+  - _podcasts
+  - assets
+  - images 
