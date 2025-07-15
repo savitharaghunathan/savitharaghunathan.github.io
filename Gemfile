@@ -1,8 +1,9 @@
 source "https://rubygems.org"
 
-group :jekyll_plugins do
-  gem "github-pages"
-end
+gem "jekyll", "~> 4.3.0"
+gem "jekyll-feed", "~> 0.17"
+gem "jekyll-seo-tag", "~> 2.8"
+gem "jekyll-sitemap", "~> 1.4"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 platforms :mingw, :x64_mingw, :mswin, :jruby do
