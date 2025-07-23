@@ -5,7 +5,7 @@ date: 2025-07-23 12:00:00
 description: >
     Learn how to transform forgettable demos into compelling stories that win hearts and minds. Based on experience building demos and experiments, this post reveals five common pitfalls that undermines the demo and its impact, and the practical strategies to overcome them. 
 tags: Demo, Docs, ProductValue, Engineering
-categories: Demo
+categories: Demo, Docs, ProductValue, Engineering
 ---
 
 ## Introduction
@@ -15,7 +15,7 @@ Over the past year, I've built demos and experiments to showcase the real impact
 A great demo doesn't just show what your tool *can* do—it tells a story that resonates with your audience's actual pain points. In this post, I'll share five common pitfalls I've encountered (and fallen into myself), plus the practical strategies that turn demos into compelling, reliable stories anyone can follow.
 
 
-## Pitfall #1: Ignoring Real-World Context
+## Pitfall #1: Ignoring real-world context
 
 **What goes wrong:** You grab a tiny code snippet—maybe a toy "HelloWorld" method—and show off a neat transformation. Your audience immediately spots it's artificial and tunes out.
 
@@ -33,7 +33,7 @@ Instead of: *"Let's change `foo()` to `bar()`"*
 Try: *"Our team spends 3-4 hours every week updating logging calls across services to use our unified logger API. Let's see how we can automate this."*
 
 
-## Pitfall #2: Overly Broad or Murky Scope
+## Pitfall #2: Overly broad scope
 
 **What goes wrong:** You try to show everything that your project is capable of in one demo. Users can't tell which parts your tool solved or what problems it addressed.
 
@@ -49,7 +49,7 @@ Try: *"Our team spends 3-4 hours every week updating logging calls across servic
 Create a simple slide showing "Before" and "After" or "Start" and "End" states. This keeps both you and your audience focused on the specific transformation.
 
 
-## Pitfall #3: Overlooking Environment & Configuration Quirks
+## Pitfall #3: Overlooking environment & configuration issues
 
 **What goes wrong:** Your demo works perfectly on your laptop, but when someone else tries to run it, they hit missing properties, failing tests, or unmocked services—and blame your project.
 
@@ -65,7 +65,7 @@ Create a simple slide showing "Before" and "After" or "Start" and "End" states. 
 Version your demo repo with a `setup.sh` script. When you say "works for me," it should truly mean "works for everyone."
 
 
-## Pitfall #4: Under-Defining Success Metrics
+## Pitfall #4: Not defining success metrics
 
 **What goes wrong:** You declare "it succeeded" and move on. Without concrete numbers, there's no way to prove improvement or compare against manual effort.
 
@@ -80,7 +80,7 @@ Version your demo repo with a `setup.sh` script. When you say "works for me," it
 ### Example Metrics:
 *"Automated API updates completed in 2 minutes vs. 15 minutes manually—an 87% reduction in effort."*
 
-## Pitfall #5: Skipping the Iteration Loop
+## Pitfall #5: Skipping the iteration loop
 
 **What goes wrong:** You run the scenario once, it works, and you call it done. But demos rarely survive code changes or varied environments on the first try.
 
@@ -110,9 +110,9 @@ A demo that always works is far more persuasive than a flashy one-off success.
 - *"Install our CLI from npm with `npm install -g my-tool`"*
 - *"Let's schedule a quick call to see how this applies to your codebase—pick a time here."*
 
-## Demo Design Checklist
+## Demo designing checklist
 
-Use this checklist every time you craft a new demo scenario:
+Use this checklist every time you create a new demo scenario:
 
 - [ ] **Authentic starting point:** Scenario is grounded in a real pain point
 - [ ] **Focused scope:** One clear objective, time-boxed under 8 minutes
