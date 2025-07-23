@@ -7,6 +7,8 @@ description: >
 tags: Demo, Docs, ProductValue, Engineering
 categories: Demo, Docs, ProductValue, Engineering
 ---
+*Learn how to transform forgettable demos into compelling stories that win hearts and minds. Based on experience building demos and experiments, this post reveals five common pitfalls that undermines the demo and its impact, and the practical strategies to overcome them.*
+---
 
 ## Introduction
 
