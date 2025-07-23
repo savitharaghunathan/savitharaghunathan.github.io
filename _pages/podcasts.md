@@ -152,12 +152,8 @@ permalink: /podcasts/
                         <div class="card-content">
                           <ul class="content-list">
                                 <li><a href="https://www.cncf.io/humans-of-cloud-native/savitha-raghunathan/" target="_blank">Savitha Raghunathan – From Curiosity to Community Leadership</a></li>
-                            </ul>
-                            <ul class="content-list">
                                 <li><a href="https://youtu.be/3yRy-eR3rhg" target="_blank">Savitha Raghunathan, Red Hat & Christopher Nuland, Konveyor | KubeCon + CloudNativeCon NA 2022</a></li>
-                            </ul>
-                            <ul class="content-list">
-                                <li><a href="https://blogs.mathworks.com/community/2020/11/02/questions-for-savitha-raghunathan/" target="_blank">Savitha Talks About Kubernetes </a></li>
+                                <li><a href="https://blogs.mathworks.com/community/2020/11/02/questions-for-savitha-raghunathan/" target="_blank">Savitha Talks About Kubernetes</a></li>
                             </ul>
                         </div>
                     </article>
