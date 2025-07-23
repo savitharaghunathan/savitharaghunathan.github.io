@@ -36,6 +36,16 @@ permalink: /podcasts/
                     
                     <article class="content-card">
                         <div class="card-content">
+                            <h3 class="card-title">DevConf US 2024</h3>
+                            <ul class="content-list">
+                                <li><a href="https://youtu.be/ic5WnbYVTto" target="_blank">Modernization 101: A Beginner's Guide to Application Modernization and Methodology</a></li>
+                                <li><a href="https://github.com/savitharaghunathan/presentations/blob/main/Stop%20Kubernetes'%20Revolving%20Door%3A%20A%20Hands-On%20Workshop%20to%20Secure%20a%20Kubernetes%20Cluster/Stop_Kubernetes_Revolving_Door__A_Hands-On__eKZYvgV.pdf" target="_blank">Stop Kubernetes' Revolving Door: A Hands-On Workshop to Secure a Kubernetes Cluster</a></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="content-card">
+                        <div class="card-content">
                             <h3 class="card-title">KubeCon 2023</h3>
                             <ul class="content-list">
                                 <li><a href="https://youtu.be/kPdlHnfR4PE" target="_blank">EU: Nurturing Security Permaculture: Kubernetes SIG Security Update</a></li>
@@ -44,6 +54,15 @@ permalink: /podcasts/
                         </div>
                     </article>
                     
+                    <article class="content-card">
+                        <div class="card-content">
+                            <h3 class="card-title">Linux Foundation Member Summit 2023</h3>
+                            <ul class="content-list">
+                                <li><a href="https://github.com/savitharaghunathan/presentations/blob/main/The%20%E2%80%9CSecret%20Sauce%E2%80%9D%20to%20Your%20Digital%20Transformation%3A%20Build%20a%20Learning%20Community!/The%20%E2%80%9Csecret%20sauce%E2%80%9D%20to%20your%20digital%20transformation_%20build%20a%20learning%20community!%20(2)%20(1).pdf" target="_blank">The Linux Foundation Member Summit 2023: The "Secret Sauce" to Your Digital Transformation: Build a Learning Community!</a></li>
+                            </ul>
+                        </div>
+                    </article>
+
                     <article class="content-card">
                         <div class="card-content">
                             <h3 class="card-title">KubeCon 2022</h3>
@@ -66,6 +85,9 @@ permalink: /podcasts/
                             </ul>
                         </div>
                     </article>
+
+
+
                 </div>
             </div>
             
@@ -75,21 +97,10 @@ permalink: /podcasts/
                 <div class="content-grid">
                     <article class="content-card">
                         <div class="card-content">
-                            <h3 class="card-title">DevConf US 2024</h3>
-                            <ul class="content-list">
-                                <li><a href="https://youtu.be/ic5WnbYVTto" target="_blank">Modernization 101: A Beginner's Guide to Application Modernization and Methodology</a></li>
-                                <li><a href="https://github.com/savitharaghunathan/presentations/blob/main/Stop%20Kubernetes'%20Revolving%20Door%3A%20A%20Hands-On%20Workshop%20to%20Secure%20a%20Kubernetes%20Cluster/Stop_Kubernetes_Revolving_Door__A_Hands-On__eKZYvgV.pdf" target="_blank">Stop Kubernetes' Revolving Door: A Hands-On Workshop to Secure a Kubernetes Cluster</a></li>
-                            </ul>
-                        </div>
-                    </article>
-                    
-                    <article class="content-card">
-                        <div class="card-content">
                             <h3 class="card-title">Community Events</h3>
                             <ul class="content-list">
                                 <li><a href="https://www.meetup.com/Data-on-Kubernetes-community/events/275961632/" target="_blank">DoK Community #28- Getting Started Contributing to Kubernetes</a> | <a href="https://www.youtube.com/watch?v=5Rxot4V0m50" target="_blank">YouTube</a></li>
                                 <li><a href="https://github.com/savitharaghunathan/presentations/tree/main/Starting%20with%20Non-Code%20Contributions%20in%20Kubernetes" target="_blank">Your Path to Non-Code Contributions in Kubernetes</a></li>
-                                <li><a href="https://github.com/savitharaghunathan/presentations/blob/main/The%20%E2%80%9CSecret%20Sauce%E2%80%9D%20to%20Your%20Digital%20Transformation%3A%20Build%20a%20Learning%20Community!/The%20%E2%80%9Csecret%20sauce%E2%80%9D%20to%20your%20digital%20transformation_%20build%20a%20learning%20community!%20(2)%20(1).pdf" target="_blank">The Linux Foundation Member Summit 2023: The "Secret Sauce" to Your Digital Transformation: Build a Learning Community!</a></li>
                             </ul>
                         </div>
                     </article>
