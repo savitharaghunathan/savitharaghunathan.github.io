@@ -26,6 +26,24 @@ permalink: /podcasts/
                 <div class="content-grid">
                     <article class="content-card">
                         <div class="card-content">
+                            <h3 class="card-title">KubeCon 2026 EU</h3>
+                            <ul class="content-list">
+                                <li><a href="https://sched.co/2CW3Y" target="_blank">AI-Powered Cloud Native Modernization: From Real Challenges to Concrete Solutions</a></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="content-card">
+                        <div class="card-content">
+                            <h3 class="card-title">KubeCon 2025 NA</h3>
+                            <ul class="content-list">
+                                <li><a href="https://youtu.be/q4ryxYhAenM" target="_blank">Butterfly Effect: What Kubernetes SIG Security Has in Flight</a></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="content-card">
+                        <div class="card-content">
                             <h3 class="card-title">KubeCon 2024 NA</h3>
                             <ul class="content-list">
                                 <li><a href="https://sched.co/1hox8" target="_blank">Navigate Cross SIG Collaborations with SIG Docs</a> | <a href="https://youtu.be/C7-BM4b5Bgc" target="_blank">Recording</a></li>
@@ -183,6 +201,7 @@ permalink: /podcasts/
                 <article class="content-card">
                     <div class="card-content">
                         <ul class="content-list">
+                            <li><a href="https://konveyor.io/blog/2026/migrating-ingress-nginx-go-to-gateway-api-konveyor-kai/" target="_blank">Migrating Ingress NGINX Go Code to Gateway API with Konveyor and KAI</a> - Konveyor Blog</li>
                             <li><a href="https://konveyor.io/blog/2025/hints_generation/" target="_blank">From "Good Examples" to a Reusable Hint for App Modernization</a> - Konveyor Blog</li>
                             <li><a href="https://www.cncf.io/blog/2023/05/23/modernize-legacy-applications-to-kubernetes-at-scale/" target="_blank">Modernize Legacy Applications to Kubernetes at Scale</a> - CNCF Blog</li>
                             <li><a href="https://kubernetes.io/blog/2021/10/05/nsa-cisa-kubernetes-hardening-guidance/" target="_blank">NSA-CISA Kubernetes Hardening Guidance</a> - Kubernetes Blog</li>
