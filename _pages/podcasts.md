@@ -141,11 +141,12 @@ permalink: /podcasts/
                         <div class="card-content">
                             <h3 class="card-title">Kubernetes & Cloud Native</h3>
                             <ul class="content-list">
+                                <li><a href="https://www.youtube.com/live/I9GRHOGARZg" target="_blank">Rancher Live: Konveyor's Cloud Native Modernisation Blueprint</a> | <a href="https://www.linkedin.com/events/7419571060620115968/" target="_blank">Rancher Livestream</a></li>
+                                <li><a href="https://packetpushers.net/podcasts/kubernetes-unpacked/ku053-migrate-legacy-applications-to-kubernetes-with-konveyor/" target="_blank">KU053: Migrate Legacy Applications to Kubernetes with Konveyor</a></li>
                                 <li><a href="https://kubernetespodcast.com/episode/157-kubernetes-1.22/" target="_blank">Kubernetes 1.22, with Savitha Raghunathan</a></li>
                                 <li><a href="https://community.cncf.io/events/details/cncf-cncf-online-programs-presents-cncf-live-webinar-kubernetes-122-release/" target="_blank">CNCF Live Webinar: Kubernetes 1.22 release</a></li>
                                 <li><a href="https://www.youtube.com/watch?v=wKbe0T2E0QQ" target="_blank">Cloud Tech Tuesdays: Kubernetes 1.22</a></li>
                                 <li><a href="https://youtu.be/58RGh68_YyY?" target="_blank">Your Path to Non-Code Contributions in Kubernetes</a></li>
-                                <li><a href="https://packetpushers.net/podcasts/kubernetes-unpacked/ku053-migrate-legacy-applications-to-kubernetes-with-konveyor/" target="_blank">KU053: Migrate Legacy Applications to Kubernetes with Konveyor</a></li>
                             </ul>
                         </div>
                     </article>
