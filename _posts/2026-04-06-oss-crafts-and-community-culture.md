@@ -23,4 +23,6 @@ Open source runs on the same habit, just with different tools. Projects stretch 
 
 Neither world is uniformly gentle. Both have gatekeeping, speed contests, and corners that feel like an exam. The groups I stay are the ones that treat **sharing** as default and **learning** as something we do together in the open. They assume you belong until you prove otherwise, and they let the tenth question matter as much as the first.
 
-Open source is where I practice clarity, patience, and the kind of generosity that only works in public. I try to bring that practice back to every commit. If you also live in both worlds—yarn, code, or another craft—I would love to hear what you have learned from one that changed how you show up in the other. The pattern only gets better when more of us stitch it together.
+Open source is where I practice clarity, patience, and the kind of generosity that only works in public. I try to bring that practice back to every commit. If you also live in both worlds—yarn, code, or another craft—I would love to hear what you have learned from one that changed how you show up in the other. The pattern only gets better when more of us stitch it together.[^1]
+
+[^1]: I edited this post for grammar and flow using Cursor/Codex.
