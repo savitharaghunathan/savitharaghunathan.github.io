@@ -12,4 +12,4 @@ My passion lies in nurturing the Open Source community, where I find great joy i
 
 For instructions on setting up this site locally, viewing the tech stack, or running deployment commands:
 
-📖 See **[DEVELOPMENT.md](DEVELOPMENT.md)**.
+See **[DEVELOPMENT.md](DEVELOPMENT.md)**.
