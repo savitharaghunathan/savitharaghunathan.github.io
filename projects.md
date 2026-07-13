@@ -15,135 +15,109 @@ permalink: /projects/
   <div class="container">
     <div class="project-card">
       <div class="project-content">
-        <h3>KAI Solution Server Notebooks</h3>
+        <h3>GenEval</h3>
         <p class="project-description">
-          Comprehensive collection of Jupyter notebooks exploring KAI solution server architecture. 
-          Contains detailed research, experiments, and conceptual designs for scalable AI-powered 
-          solution delivery systems and hint generation algorithms.
+          A unified evaluation framework for Generative AI applications that solves fragmented evaluation in the RAG ecosystem. It features profile-driven evaluation, automatic adapter routing, and CI/CD integration.
         </p>
         <div class="project-tech">
-          <span class="tech-tag">Jupyter Notebook</span>
-          <span class="tech-tag">AI/ML</span>
-          <span class="tech-tag">Architecture</span>
-          <span class="tech-tag">Solution Server</span>
-          <span class="tech-tag">Research</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/savitharaghunathan/kai-solution-server-ideas" class="btn btn-secondary">View Notebooks</a>
-          <a href="https://konveyor.io/blog/2025/hints_generation/" class="btn btn-primary">Read Research</a>
-        </div>
-      </div>
-    </div>
-
-    
-
-    <div class="project-card">
-      <div class="project-content">
-        <h3>AI Evaluation Notebooks</h3>
-        <p class="project-description">
-          A collection of Jupyter notebooks for AI evaluation and experimentation. This playpen environment 
-          allows for testing and validating AI models and algorithms.
-        </p>
-        <div class="project-tech">
-          <span class="tech-tag">Jupyter Notebook</span>
           <span class="tech-tag">Python</span>
-          <span class="tech-tag">AI/ML</span>
-          <span class="tech-tag">Evaluation</span>
+          <span class="tech-tag">RAGAS</span>
+          <span class="tech-tag">DeepEval</span>
+          <span class="tech-tag">LLM Evaluation</span>
+          <span class="tech-tag">CI/CD</span>
         </div>
         <div class="project-links">
-          <a href="https://github.com/savitharaghunathan/ai-eval-notebooks-playpen" class="btn btn-secondary">View Source</a>
+          <a href="https://github.com/savitharaghunathan/gen-eval" class="btn btn-secondary">View Source</a>
         </div>
       </div>
     </div>
 
     <div class="project-card">
       <div class="project-content">
-        <h3>Personal Website</h3>
+        <h3>RecipeAI</h3>
         <p class="project-description">
-          A modern, responsive personal website built with Jekyll. Features a clean design, blog functionality, 
-          and podcast listings. Built with modular components and custom CSS.
+          An AI-powered recipe and nutrition assistant featuring Traditional Mode for cuisine-based meal planning and AI Agent Mode for natural language ingredient-based suggestions and nutrition optimization.
         </p>
         <div class="project-tech">
-          <span class="tech-tag">Jekyll</span>
-          <span class="tech-tag">HTML/CSS</span>
-          <span class="tech-tag">GitHub Pages</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">AI Agent</span>
+          <span class="tech-tag">MCP Server</span>
+          <span class="tech-tag">Nutrition</span>
         </div>
         <div class="project-links">
-          <a href="https://github.com/savitharaghunathan/savitharaghunathan.github.io" class="btn btn-secondary">View Source</a>
-          <a href="/" class="btn btn-primary">Live Site</a>
+          <a href="https://github.com/savitharaghunathan/recipeAI" class="btn btn-secondary">View Source</a>
         </div>
       </div>
     </div>
 
     <div class="project-card">
       <div class="project-content">
-        <h3>Enterprise Audit Library</h3>
+        <h3>Konveyor AI Rule Generator</h3>
         <p class="project-description">
-          A library for enterprise auditing functionality. Provides tools and utilities for 
-          implementing comprehensive audit trails in enterprise applications.
-        </p>
-        <div class="project-tech">
-          <span class="tech-tag">Enterprise</span>
-          <span class="tech-tag">Audit</span>
-          <span class="tech-tag">Library</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/savitharaghunathan/enterprise-audit-library" class="btn btn-secondary">View Source</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-content">
-        <h3>Inventory Management System</h3>
-        <p class="project-description">
-          A Java-based inventory management application. Provides comprehensive tools for 
-          tracking and managing inventory across different business operations.
-        </p>
-        <div class="project-tech">
-          <span class="tech-tag">Java</span>
-          <span class="tech-tag">Inventory</span>
-          <span class="tech-tag">Management</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/savitharaghunathan/inventory_management" class="btn btn-secondary">View Source</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-content">
-        <h3>Payment Gateway Application</h3>
-        <p class="project-description">
-          A Java-based payment gateway application. Implements secure payment processing 
-          functionality for e-commerce and financial applications.
-        </p>
-        <div class="project-tech">
-          <span class="tech-tag">Java</span>
-          <span class="tech-tag">Payment</span>
-          <span class="tech-tag">Gateway</span>
-          <span class="tech-tag">Security</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/savitharaghunathan/payment-gateway-app" class="btn btn-secondary">View Source</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-content">
-        <h3>Konveyor Documentation</h3>
-        <p class="project-description">
-          Documentation for Konveyor projects. Comprehensive documentation site built to help developers 
-          understand and implement Konveyor tools and frameworks effectively.
+          Generate Konveyor analyzer migration rules from any migration guide. Point your AI coding agent at a guide and get validated, tested rules ready for the rulesets repository.
         </p>
         <div class="project-tech">
           <span class="tech-tag">HTML</span>
-          <span class="tech-tag">Documentation</span>
-          <span class="tech-tag">GitHub Pages</span>
+          <span class="tech-tag">Konveyor</span>
+          <span class="tech-tag">AI Agent</span>
+          <span class="tech-tag">Migration Rules</span>
         </div>
         <div class="project-links">
-          <a href="https://github.com/savitharaghunathan/konveyor.github.io" class="btn btn-secondary">View Source</a>
+          <a href="https://github.com/konveyor/ai-rule-gen" class="btn btn-secondary">View Source</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-content">
+        <h3>Migration Skills Generator</h3>
+        <p class="project-description">
+          Generates executable agentskills.io migration skills from framework migration guides, producing complete mapping tables and structured workflow phases for LLM agents.
+        </p>
+        <div class="project-tech">
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">Go</span>
+          <span class="tech-tag">Migration Skills</span>
+          <span class="tech-tag">LLM Agent</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/savitharaghunathan/migration-skills" class="btn btn-secondary">View Source</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-content">
+        <h3>Eval-Driven Development</h3>
+        <p class="project-description">
+          An agent skill bridging the gap between design spec and implementation. It automatically generates eval tasks, graders, problem sets, and pass criteria to serve as the definition of done.
+        </p>
+        <div class="project-tech">
+          <span class="tech-tag">AI/ML Evals</span>
+          <span class="tech-tag">Testing</span>
+          <span class="tech-tag">AI Agent</span>
+          <span class="tech-tag">Software Design</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/savitharaghunathan/eval-driven-development" class="btn btn-secondary">View Source</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-content">
+        <h3>Zupp</h3>
+        <p class="project-description">
+          Run actual agent runtimes inside secure, containerized sandboxes with cluster-grade isolation, Quay OCI skill/runtime distribution, and cosign signatures.
+        </p>
+        <div class="project-tech">
+          <span class="tech-tag">Go</span>
+          <span class="tech-tag">Kubernetes</span>
+          <span class="tech-tag">Security</span>
+          <span class="tech-tag">Agent Sandbox</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/savitharaghunathan/zupp" class="btn btn-secondary">View Source</a>
         </div>
       </div>
     </div>
