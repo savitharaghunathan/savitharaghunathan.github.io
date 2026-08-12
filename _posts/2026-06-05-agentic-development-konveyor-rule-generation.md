@@ -3,12 +3,12 @@ layout: post
 title: "Agentic Development: Building an AI-Powered Rule Generation Pipeline for Konveyor"
 date: 2026-06-05 12:00:00
 description: >
-    I built an agentic pipeline to generate Konveyor migration rules and the things that actually mattered are - keeping context light with sub-agents, JSON contracts between stages, Go tools for the boring parts, and an orchestrator that is thin.
+    I built an agentic pipeline to generate Konveyor migration rules and the things that actually mattered are keeping context light with sub-agents, JSON contracts between stages, Go tools for the boring parts, and an orchestrator that is thin.
 tags: AI, Konveyor, Agentic Development
 categories: AI, Agentic Development
 ---
 
-*I was tasked with building an AI rule generation pipeline for Konveyor — and the real lesson turned out to be agentic design itself: how to keep context light, enforce contracts between agents, and know when to use code instead of an LLM.*
+*I was tasked with building an AI rule generation pipeline for Konveyor and the real lesson turned out to be agentic design itself: how to keep context light, enforce contracts between agents, and know when to use code instead of an LLM.*
 
 ---
 
@@ -27,7 +27,7 @@ The architecture has three core components: a rule writer, a test data generator
 The pipeline has six stages: ingest the migration guide, extract patterns, generate test data, validate with Kantra (Konveyor's CLI), fix failures in the generated test data, and write a summary. At each handoff the orchestrator either calls a deterministic tool or dispatches a sub-agent, takes the output, and moves on.
 
 
-## Challenge 1: Context Rot
+## Context Rot
 
 The first major challenge was keeping the context light. When you have one big agent trying to do everything like read a migration guide, understand API changes, write rule YAML, generate test code, debug failures, the context window fills up fast. The quality of output degrades as the conversation grows. 
 
@@ -36,20 +36,20 @@ Sub-agents fixed that for me. Each one starts fresh with only what it needs. The
 I also kept the orchestrator thin on purpose. It doesn't read the files the sub-agents will read. It doesn't hold migration guide content. It passes file paths, collects structured outputs, and kicks off the next step. 
 
 
-## Challenge 2: Standardizing Input/Output
+## Standardizing Input/Output
 
 Initially, every sub-agent invented its own format. The rule writer returned patterns one way, the test generator expected them another way, and things broke at the boundaries.
 
-So I added contracts — JSON schemas for what each agent gets and what it has to return. Before a sub-agent runs, the orchestrator checks inputs against the schema. After it returns, it checks outputs. Fail validation and the step fails right there, with a clear error. No quiet garbage sliding three stages downstream.
+So, I added contracts in the form of JSON schemas for what each agent gets and what it has to return. Before a sub-agent runs, the orchestrator checks inputs against the schema. After it returns, it checks outputs. Fail validation and the step fails right there, with a clear error. It prevented from erroneous output getting passed down three stages.
 
 
-## Put deterministic work in Go tools
+## Put deterministic work into tools/scripts
 
-I also split tasks that need exact answers from tasks that need reasoning. For the exact ones I wrote small Go CLI tools and called them from the pipeline: parsing a migration guide into sections, building rule YAML from patterns, scaffolding test directories, validating XML, running kantra tests. None of that needs an LLM. It needs the same transformation every time.
+I also split tasks that need exact answers from tasks that need reasoning. For the exact ones I wrote small Go CLI tools and called them from the pipeline for parsing a migration guide into sections, building rule YAML from patterns, scaffolding test directories, validating XML, running kantra tests. None of that needs an LLM and it needs the same transformation every time.
 
-I ended up with 13+ Go tools for the mechanical work. The agents only do what LLMs are decent at: reading a migration guide and figuring out what changed, writing compilable test code that hits a specific pattern, and diagnosing why a test failed.
+I ended up with 13+ Go tools for the deterministic work. The agents only do what LLMs are decent at like reading a migration guide and figuring out what changed, writing compilable test code that hits a specific pattern, and diagnosing why a test failed.
 
-Every time I moved something from "let the LLM decide" to "let the Go tool run it," reliability went up. The model doesn't need to guess a rule ID format or which directory a test file belongs in.
+Every time I moved something from "let the LLM decide" to "let the deteministic tool run it," reliability went up. The model doesn't need to guess a rule ID format or which directory a test file belongs in.
 
 ## Parallelism without shared state
 
@@ -59,16 +59,14 @@ Each parallel agent is independent. Chunk 2 doesn't wait on chunk 1. They write 
 
 ## What I'd tell myself going in
 
-Sub-agents aren't mainly about parallelism. They're about isolation. Even serially, they're worth it because each one gets a clean window for one job.
+* Sub-agents aren't mainly about parallelism. They're about isolation. Even serially, they're worth it because each one gets a clean window for one job.
 
-Contracts make the pipeline debuggable. Without them you're chasing weird LLM output across stages. With them you know which boundary failed.
+* Contracts make the pipeline debuggable. Without them you're chasing weird LLM output across stages. With them you know which boundary failed.
 
-Pull anything deterministic out of the model. LLMs are useful for reasoning and messy language. They're a bad fit for formatting rule IDs and laying out directories.
+* Pull anything deterministic out of the agent. LLMs are useful for reasoning and messy language. They are not required for formatting rule IDs and laying out directories.
 
-Keep the orchestrator thin. Mine doesn't read migration guides, parse rule YAML, or edit test files. It validates contracts, chains tools, dispatches agents, and logs. Making it "smarter" usually just means more context and more drift.
+* Keep the orchestrator thin. Mine doesn't read migration guides, parse rule YAML, or edit test files. It validates contracts, chains tools, dispatches agents, and logs. Making it "smarter" usually just means more context and more drift.
 
 ## Where it landed
 
-What used to take me weeks of hand-written rules and cross-file debugging now goes through those six stages. I trust it enough on real migration guides — not perfect every time, but consistent enough that I review the output instead of rebuilding every step myself.
-
-For me, that’s a clear winner. I can spend less time stuck writing and debugging rules by hand, and more time reviewing something the pipeline already got most of the way there.
+What used to take me weeks of hand-written rules and cross-file debugging now goes through those six stages. I trust it enough on real migration guides. It is not perfect every time, but consistent enough that I review the output instead of rebuilding every step myself. Personally for me, that’s a clear winner. I can spend less time stuck writing and debugging rules by hand, and more time reviewing something the pipeline already got most of the way there.
